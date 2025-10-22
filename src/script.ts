@@ -687,7 +687,7 @@
 //     );
 // }
 
-
+// Chapitre 1 – Classe et Instance
 // Exercice 1
 // Crée une classe Person avec deux propriétés firstName et lastName.
 // Ajoute une méthode sayHello() qui affiche un message de salutation.
@@ -946,36 +946,36 @@
 // Crée une classe City avec name et population.
 // Ajoute une méthode describe() qui affiche une phrase descriptive.
 
-class City {
-    // Attributs
-    city: string;
-    population: number;
-    describe:string;
+// class City {
+//     // Attributs
+//     city: string;
+//     population: number;
+//     describe:string;
   
-    // Méthodes
-    constructor(City: string, Population: number, Describe: string) {
-        this.city = City;
-        this.population = Population;
-        this.describe = Describe;
-    }
+//     // Méthodes
+//     constructor(City: string, Population: number, Describe: string) {
+//         this.city = City;
+//         this.population = Population;
+//         this.describe = Describe;
+//     }
 
 
-    getDescribe(){
-      console.log("Ville choisie :", this.city,"Population (millions) :",this.population, "description",this.describe);
+//     getDescribe(){
+//       console.log("Ville choisie :", this.city,"Population (millions) :",this.population, "description",this.describe);
       
-}
-}
+// }
+// }
 
 
 // Instanciation d'une classe via l'opérateur new
 // const person = new Person("Duplouich","Marie-Sophie");
 // person.sayHello();   // Appel d'une méthode de la classe Person
 
-const cityblois = new City("Blois", 47092,"Elle a une grande histoire. C'était une ville monarchiste.");
-cityblois.getDescribe();
+// const cityblois = new City("Blois", 47092,"Elle a une grande histoire. C'était une ville monarchiste.");
+// cityblois.getDescribe();
 
-const citycracow = new City("Cracovie", 804237,"Cracovie est la mailleure ville de Pologne");
-citycracow.getDescribe();
+// const citycracow = new City("Cracovie", 804237,"Cracovie est la mailleure ville de Pologne");
+// citycracow.getDescribe();
 
 
 // Exercice 10
@@ -1008,3 +1008,158 @@ citycracow.getDescribe();
 // const ordi = new Computer("Predator",8);
 
 // ordi.getInfo();
+
+
+// Chapitre 2 – Constructor
+// Exercice 1
+// Reprends la classe Person et ajoute un constructeur qui initialise firstName et lastName.
+
+// class Person {
+//     // Attributs
+//     name: string;
+//     firstname: string;
+  
+
+//     // Méthodes
+//     constructor(Name: string, firstName: string) {
+//         this.name = Name;
+//         this.firstname = firstName;
+//     }
+
+//     sayHello() {
+//         console.log("Bonjour, je m'appelle", this.name, this.firstname);
+//     }
+// }
+// // Instanciation d'une classe via l'opérateur new
+// const person = new Person("Duplouich","Marie-Sophie");
+// person.sayHello();   // Appel d'une méthode de la classe Person
+
+
+
+// Exercice 2
+// Crée une classe Car avec un constructeur qui initialise brand et year.
+// Ajoute une méthode showInfo().
+
+
+// class Car {
+//     // Attributs
+//     brand : string;
+//     year: number;
+  
+
+//     // Méthodes
+//     constructor(Brand: string, Year: number) {
+//         this.brand = Brand;
+//         this.year = Year;
+//     }
+
+//     showInfo() {
+//         console.log("Voiture : ", this.brand,"Année : ", this.year);
+//     }
+// }
+// // Instanciation d'une classe via l'opérateur new
+// const car = new Car("Audi", 1990);
+// car.showInfo();   // Appel d'une méthode de la classe Person
+
+
+// Exercice 3
+// Crée une classe Dog avec un constructeur prenant name et breed.
+// Ajoute une méthode bark().
+
+// class Dog {
+//     // Attributs
+//     name: string;
+//     breed : string;
+
+//     // Méthodes
+//     constructor(Name: string, Breed: string) {
+//         this.name = Name;
+//         this.breed = Breed;
+//     }
+
+ 
+//     bark(){
+//          console.log("Bonjour, je suis ", this.name,"de l'espèce des ",this.breed);
+//     }
+// }
+// // Instanciation d'une classe via l'opérateur new
+// // const person = new Person("Duplouich","Marie-Sophie");
+// // person.sayHello();   // Appel d'une méthode de la classe Person
+
+// const cris = new Dog("BB","bergers allemands");
+
+// cris.bark();
+
+
+
+// Exercice 4
+// Crée une classe Circle avec radius.
+// Ajoute une méthode getPerimeter() et un constructeur pour initialiser radius.
+
+
+// class Circle {
+//     // Attributs
+//      rayon : number;
+  
+  
+//     // Méthodes
+//     constructor(Rayon: number) {
+//         this.rayon = Rayon;
+//     }
+
+ 
+//   getPerimeter(){
+//          console.log( 2 * 3.14 * this.rayon);
+          
+
+//     }
+// }
+// // Instanciation d'une classe via l'opérateur new
+// // const person = new Person("Duplouich","Marie-Sophie");
+// // person.sayHello();   // Appel d'une méthode de la classe Person
+
+// const calculusCircleperimeter = new Circle(8);
+// calculusCircleperimeter.getPerimeter();
+
+
+// Exercice 5
+// Crée une classe User avec username et email.
+// Utilise le constructeur pour les initialiser.
+
+
+
+
+
+
+
+// Exercice 6
+// Crée une classe Course avec title et duration (en heures).
+// Ajoute une méthode describeCourse().
+
+
+
+
+// Exercice 7
+// Crée une classe Laptop avec brand, processor, price.
+// Initialise-les dans le constructeur.
+
+
+
+
+// Exercice 8
+// Crée une classe Book avec title, author, pages.
+// Ajoute une méthode summary() qui affiche une courte description.
+
+
+
+
+// Exercice 9
+// Crée une classe Employee avec name, position, salary.
+// Ajoute une méthode introduce().
+
+
+
+
+// Exercice 10
+// Crée une classe Plane avec model et capacity.
+// Ajoute une méthode fly() qui affiche un message.
