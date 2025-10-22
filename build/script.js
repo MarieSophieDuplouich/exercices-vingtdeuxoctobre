@@ -752,21 +752,17 @@ class City {
         this.population = Population;
         this.describe = Describe;
     }
-    getInfo() {
-        console.log("Ville choisie :", this.city, "Population (millions) :", this.population);
+    getDescribe() {
+        console.log("Ville choisie :", this.city, "Population (millions) :", this.population, "description", this.describe);
     }
-}
-getDescribe();
-{
-    console.log("Ville choisie :", this.city, "Population (millions) :", this.population);
-    console.log("Ville choisie :", this.city, "Population (millions) :", this.population);
 }
 // Instanciation d'une classe via l'opérateur new
 // const person = new Person("Duplouich","Marie-Sophie");
 // person.sayHello();   // Appel d'une méthode de la classe Person
-const citypau = new City("Banane bleue d'Asie", 8);
-citypau.getInfo();
-const citycracow;
+const cityblois = new City("Blois", 47092, "Elle a une grande histoire. C'était une ville monarchiste.");
+cityblois.getDescribe();
+const citycracow = new City("Cracovie", 804237, "Cracovie est la mailleure ville de Pologne");
+citycracow.getDescribe();
 // Exercice 10
 // Crée une classe Computer avec brand et ram.
 // Affiche dans la console les détails d’un ordinateur.
