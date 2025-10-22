@@ -906,12 +906,81 @@
 // Crée une classe Product avec name et price.
 // Crée plusieurs instances et affiche leurs noms et prix.
 
+// class Product {
+//     // Attributs
+//     name: string;
+//     price: number;
+  
+  
+//     // Méthodes
+//     constructor(Name: string, Price: number) {
+//         this.name = Name;
+//         this.price = Price;
+//     }
 
+ 
+// getInfo(){
+//          console.log("Produit choisi :", this.name,"Prix :",this.price, "€");
+
+//     }
+// }
+// // Instanciation d'une classe via l'opérateur new
+// // const person = new Person("Duplouich","Marie-Sophie");
+// // person.sayHello();   // Appel d'une méthode de la classe Person
+
+// const banane = new Product("Banane bleue d'Asie",8);
+
+// banane.getInfo();
+
+// const bananer = new Product("Banane rouge d'Asie",90);
+
+// bananer.getInfo();
+
+
+// const bananej = new Product("Banane",1);
+
+// bananej.getInfo();
 
 
 // Exercice 9
 // Crée une classe City avec name et population.
 // Ajoute une méthode describe() qui affiche une phrase descriptive.
+
+class City {
+    // Attributs
+    city: string;
+    population: number;
+    describe:string;
+  
+    // Méthodes
+    constructor(City: string, Population: number, Describe:string) {
+        this.city = City;
+        this.population = Population;
+        this.describe = Describe;
+    }
+
+ 
+getInfo(){
+         console.log("Ville choisie :", this.city,"Population (millions) :",this.population);
+
+    }
+}
+
+getDescribe(){
+      console.log("Ville choisie :", this.city,"Population (millions) :",this.population);
+        console.log("Ville choisie :", this.city,"Population (millions) :",this.population);
+}
+// Instanciation d'une classe via l'opérateur new
+// const person = new Person("Duplouich","Marie-Sophie");
+// person.sayHello();   // Appel d'une méthode de la classe Person
+
+const citypau = new City("Banane bleue d'Asie",8);
+
+citypau.getInfo();
+
+const citycracow
+
+
 
 
 
@@ -921,28 +990,28 @@
 // Affiche dans la console les détails d’un ordinateur.
 
 
-class Computer {
-    // Attributs
-    brand: string;
-    ram: number;
+// class Computer {
+//     // Attributs
+//     brand: string;
+//     ram: number;
   
   
-    // Méthodes
-    constructor(Brand: string, Ram: number) {
-        this.brand = Brand;
-        this.ram = Ram;
-    }
+//     // Méthodes
+//     constructor(Brand: string, Ram: number) {
+//         this.brand = Brand;
+//         this.ram = Ram;
+//     }
 
  
-getInfo(){
-         console.log("Ordinateur choisi :", this.brand,"Ram :",this.ram, "Go");
+// getInfo(){
+//          console.log("Ordinateur choisi :", this.brand,"Ram :",this.ram, "Go");
 
-    }
-}
-// Instanciation d'une classe via l'opérateur new
-// const person = new Person("Duplouich","Marie-Sophie");
-// person.sayHello();   // Appel d'une méthode de la classe Person
+//     }
+// }
+// // Instanciation d'une classe via l'opérateur new
+// // const person = new Person("Duplouich","Marie-Sophie");
+// // person.sayHello();   // Appel d'une méthode de la classe Person
 
-const ordi = new Computer("Predator",8);
+// const ordi = new Computer("Predator",8);
 
-ordi.getInfo();
+// ordi.getInfo();
