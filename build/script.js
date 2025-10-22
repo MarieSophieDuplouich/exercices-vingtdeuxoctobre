@@ -870,18 +870,129 @@
 // Exercice 5
 // Crée une classe User avec username et email.
 // Utilise le constructeur pour les initialiser.
+// class User {
+//     // Attributs
+//     username: string;
+//     email: string;
+//     // Méthodes
+//     constructor(Username: string, Email: string) {
+//         this.username = Username;
+//         this.email = Email;
+//     }
+//  displayUser(){
+//          console.log("Utilisateur", this.username,this.email);
+//     }
+// }
+// // Instanciation d'une classe via l'opérateur new
+// // const person = new Person("Duplouich","Marie-Sophie");
+// // person.sayHello();   // Appel d'une méthode de la classe Person
+// const user = new User("Nicolaslepigeondalmatien","nicolaspigeondalmatien@gmail.com");
+// user.displayUser();
 // Exercice 6
 // Crée une classe Course avec title et duration (en heures).
 // Ajoute une méthode describeCourse().
+// class Course {
+//     // Attributs
+//     title: string;
+//     duration: number;
+//     // Méthodes
+//     constructor(Title: string, Duration: number) {
+//         this.title = Title;
+//         this.duration = Duration;
+//     }
+//  describeCourse(){
+//          console.log("Course ", this.title,this.duration, "heures");
+//     }
+// }
+// // Instanciation d'une classe via l'opérateur new
+// // const person = new Person("Duplouich","Marie-Sophie");
+// // person.sayHello();   // Appel d'une méthode de la classe Person
+// const course = new Course("Formule1",6);
+// course.describeCourse();
 // Exercice 7
 // Crée une classe Laptop avec brand, processor, price.
 // Initialise-les dans le constructeur.
+// class Laptop {
+//     // Attributs
+//     brand: string;
+//     price: number;
+//     processor: string;
+//     // Méthodes
+//     constructor(Brand: string, Price: number, Processor: string) {
+//         this.brand = Brand;
+//         this.price = Price;
+//         this.processor = Processor;
+//     }
+//     getInfo() {
+//         console.log("Ordinateur choisi :", this.brand, "prix :", this.price, "Processor", this.processor);
+//     }
+// }
+// // Instanciation d'une classe via l'opérateur new
+// // const person = new Person("Duplouich","Marie-Sophie");
+// // person.sayHello();   // Appel d'une méthode de la classe Person
+// const ordi = new Laptop("Predator", 888, "Intel Core i9-14900KF");
+// ordi.getInfo();
 // Exercice 8
 // Crée une classe Book avec title, author, pages.
 // Ajoute une méthode summary() qui affiche une courte description.
+// class Book {
+//     // Attributs
+//     title: string;
+//     author: string;
+//     pages: number;
+//     // Méthodes
+//     constructor(Title: string, Author: string, Pages:number) {
+//         this.title = Title;
+//         this.author = Author;
+//          this.pages = Pages;
+//     }
+//     summary(){
+//          console.log("Voici le premier livre", this.title, "et l'auteur ",this.author);
+//     }
+// }
+// // Instanciation d'une classe via l'opérateur new
+// // const person = new Person("Duplouich","Marie-Sophie");
+// // person.sayHello();   // Appel d'une méthode de la classe Person
+// const livreun = new Book("Bible","Dieu",1254);
+// livreun.summary();
 // Exercice 9
 // Crée une classe Employee avec name, position, salary.
 // Ajoute une méthode introduce().
+// class Employee {
+//     // Attributs
+//     name: string;
+//     position: string;
+//     salary: number;
+//     // Méthodes
+//     constructor(Name: string, Position: string, Salary:number) {
+//         this.name = Name;
+//         this.position = Position;
+//          this.salary = Salary;
+//     }
+//     introduce(){
+//          console.log("Informations", this.name, "métier et position dans l'entreprise ",this.position,"salaire en euros par mois brut",this.salary);
+//     }
+// }
+// // Instanciation d'une classe via l'opérateur new
+// // const person = new Person("Duplouich","Marie-Sophie");
+// // person.sayHello();   // Appel d'une méthode de la classe Person
+// const employeecdbp = new Employee("Combey","Chirurgien-orthodontiste conventionné secteur 2",12854);
+// employeecdbp.introduce();
 // Exercice 10
 // Crée une classe Plane avec model et capacity.
 // Ajoute une méthode fly() qui affiche un message.
+class Plane {
+    // Méthodes
+    constructor(Model, Capacity) {
+        this.model = Model;
+        this.capacity = Capacity;
+    }
+    fly() {
+        console.log("Informations", this.model, "peut comporter un nombre maximal de passagers de : ", this.capacity);
+    }
+}
+// Instanciation d'une classe via l'opérateur new
+// const person = new Person("Duplouich","Marie-Sophie");
+// person.sayHello();   // Appel d'une méthode de la classe Person
+const airbus = new Plane("Airbus A-390", 1000);
+airbus.fly();

@@ -496,7 +496,7 @@
 //             return; // stoppe l’affichage
 //         }
 
-   
+
 
 //         // Si plus de vie des ennemis le joueur gagne
 //         if (ennemiSkilledlive <= 0) {
@@ -604,9 +604,9 @@
 //         context.font = "24px Arial";
 //         context.textAlign = "right";
 //         context.fillText(`${ennemiSkilledlive} ennemiKilled`, 100, 70);
-        
 
-   
+
+
 //         // Joueur
 //         playerPos.x += 10 * direction;
 //         playerPos.x = Math.max(0, Math.min(playerPos.x, CANVAS_WIDTH - playerImg.width));
@@ -697,7 +697,7 @@
 //     // Attributs
 //     name: string;
 //     firstname: string;
-  
+
 
 //     // Méthodes
 //     constructor(Name: string, firstName: string) {
@@ -722,7 +722,7 @@
 //     name: string;
 //     firstname: string;
 //     age: number;
-  
+
 
 //     // Méthodes
 //     constructor(Name: string, firstName: string, age: number) {
@@ -756,17 +756,17 @@
 //     name: string;
 //     species : string;
 //     cri:string;
-    
+
 
 //     // Méthodes
 //     constructor(Name: string, Species: string, Cri:string) {
 //         this.name = Name;
 //         this.species = Species;
 //         this.cri = Cri;
-       
+
 //     }
 
- 
+
 //     makeSound(){
 //          console.log("Bonjour, je suis un", this.name, "et je suis de l'espèce des  ",this.species, "Et je ", this.cri);
 //     }
@@ -787,8 +787,8 @@
 //     // Attributs
 //     title: string;
 //     author: string;
-  
-    
+
+
 
 //     // Méthodes
 //     constructor(Title: string, Author: string) {
@@ -796,7 +796,7 @@
 //         this.author = Author;
 //     }
 
- 
+
 //     makeBook(){
 //          console.log("Voici le premier livre", this.title, "et l'auteur ",this.author);
 
@@ -819,15 +819,15 @@
 //     // Attributs
 //     width: number;
 //     height: number;
-  
-  
+
+
 //     // Méthodes
 //     constructor(Width: number, Height: number) {
 //         this.width = Width;
 //         this.height = Height;
 //     }
 
- 
+
 //   getArea(){
 //          console.log(this.width * this.height);
 
@@ -850,15 +850,15 @@
 //     // Attributs
 //     name: string;
 //     grade: string;
-  
-  
+
+
 //     // Méthodes
 //     constructor(Name: string, Grade: string) {
 //         this.name = Name;
 //         this.grade = Grade;
 //     }
 
- 
+
 //  displayStudent(){
 //          console.log("Etudiant", this.name,this.grade);
 
@@ -880,15 +880,15 @@
 //     // Attributs
 //     title: string;
 //     year: number;
-  
-  
+
+
 //     // Méthodes
 //     constructor(Title: string, Year: number) {
 //         this.title = Title;
 //         this.year = Year;
 //     }
 
- 
+
 // getInfo(){
 //          console.log("Film choisi", this.title,this.year);
 
@@ -910,15 +910,15 @@
 //     // Attributs
 //     name: string;
 //     price: number;
-  
-  
+
+
 //     // Méthodes
 //     constructor(Name: string, Price: number) {
 //         this.name = Name;
 //         this.price = Price;
 //     }
 
- 
+
 // getInfo(){
 //          console.log("Produit choisi :", this.name,"Prix :",this.price, "€");
 
@@ -951,7 +951,7 @@
 //     city: string;
 //     population: number;
 //     describe:string;
-  
+
 //     // Méthodes
 //     constructor(City: string, Population: number, Describe: string) {
 //         this.city = City;
@@ -962,7 +962,7 @@
 
 //     getDescribe(){
 //       console.log("Ville choisie :", this.city,"Population (millions) :",this.population, "description",this.describe);
-      
+
 // }
 // }
 
@@ -987,15 +987,15 @@
 //     // Attributs
 //     brand: string;
 //     ram: number;
-  
-  
+
+
 //     // Méthodes
 //     constructor(Brand: string, Ram: number) {
 //         this.brand = Brand;
 //         this.ram = Ram;
 //     }
 
- 
+
 // getInfo(){
 //          console.log("Ordinateur choisi :", this.brand,"Ram :",this.ram, "Go");
 
@@ -1018,7 +1018,7 @@
 //     // Attributs
 //     name: string;
 //     firstname: string;
-  
+
 
 //     // Méthodes
 //     constructor(Name: string, firstName: string) {
@@ -1045,7 +1045,7 @@
 //     // Attributs
 //     brand : string;
 //     year: number;
-  
+
 
 //     // Méthodes
 //     constructor(Brand: string, Year: number) {
@@ -1077,7 +1077,7 @@
 //         this.breed = Breed;
 //     }
 
- 
+
 //     bark(){
 //          console.log("Bonjour, je suis ", this.name,"de l'espèce des ",this.breed);
 //     }
@@ -1100,17 +1100,17 @@
 // class Circle {
 //     // Attributs
 //      rayon : number;
-  
-  
+
+
 //     // Méthodes
 //     constructor(Rayon: number) {
 //         this.rayon = Rayon;
 //     }
 
- 
+
 //   getPerimeter(){
 //          console.log( 2 * 3.14 * this.rayon);
-          
+
 
 //     }
 // }
@@ -1128,7 +1128,31 @@
 
 
 
+// class User {
+//     // Attributs
+//     username: string;
+//     email: string;
 
+
+//     // Méthodes
+//     constructor(Username: string, Email: string) {
+//         this.username = Username;
+//         this.email = Email;
+//     }
+
+
+//  displayUser(){
+//          console.log("Utilisateur", this.username,this.email);
+
+//     }
+// }
+// // Instanciation d'une classe via l'opérateur new
+// // const person = new Person("Duplouich","Marie-Sophie");
+// // person.sayHello();   // Appel d'une méthode de la classe Person
+
+// const user = new User("Nicolaslepigeondalmatien","nicolaspigeondalmatien@gmail.com");
+
+// user.displayUser();
 
 
 
@@ -1137,12 +1161,66 @@
 // Ajoute une méthode describeCourse().
 
 
+// class Course {
+//     // Attributs
+//     title: string;
+//     duration: number;
+
+
+//     // Méthodes
+//     constructor(Title: string, Duration: number) {
+//         this.title = Title;
+//         this.duration = Duration;
+//     }
+
+
+//  describeCourse(){
+//          console.log("Course ", this.title,this.duration, "heures");
+
+//     }
+// }
+// // Instanciation d'une classe via l'opérateur new
+// // const person = new Person("Duplouich","Marie-Sophie");
+// // person.sayHello();   // Appel d'une méthode de la classe Person
+
+// const course = new Course("Formule1",6);
+
+// course.describeCourse();
+
 
 
 // Exercice 7
 // Crée une classe Laptop avec brand, processor, price.
 // Initialise-les dans le constructeur.
 
+// class Laptop {
+//     // Attributs
+//     brand: string;
+//     price: number;
+//     processor: string;
+
+
+
+//     // Méthodes
+//     constructor(Brand: string, Price: number, Processor: string) {
+//         this.brand = Brand;
+//         this.price = Price;
+//         this.processor = Processor;
+//     }
+
+//     getInfo() {
+//         console.log("Ordinateur choisi :", this.brand, "prix :", this.price, "Processor", this.processor);
+
+//     }
+
+// }
+// // Instanciation d'une classe via l'opérateur new
+// // const person = new Person("Duplouich","Marie-Sophie");
+// // person.sayHello();   // Appel d'une méthode de la classe Person
+
+// const ordi = new Laptop("Predator", 888, "Intel Core i9-14900KF");
+
+// ordi.getInfo();
 
 
 
@@ -1151,6 +1229,35 @@
 // Ajoute une méthode summary() qui affiche une courte description.
 
 
+// class Book {
+//     // Attributs
+//     title: string;
+//     author: string;
+//     pages: number;
+
+
+
+//     // Méthodes
+//     constructor(Title: string, Author: string, Pages:number) {
+//         this.title = Title;
+//         this.author = Author;
+//          this.pages = Pages;
+//     }
+
+
+//     summary(){
+//          console.log("Voici le premier livre", this.title, "et l'auteur ",this.author);
+
+//     }
+// }
+// // Instanciation d'une classe via l'opérateur new
+// // const person = new Person("Duplouich","Marie-Sophie");
+// // person.sayHello();   // Appel d'une méthode de la classe Person
+
+// const livreun = new Book("Bible","Dieu",1254);
+
+// livreun.summary();
+
 
 
 // Exercice 9
@@ -1158,8 +1265,66 @@
 // Ajoute une méthode introduce().
 
 
+// class Employee {
+//     // Attributs
+//     name: string;
+//     position: string;
+//     salary: number;
+
+
+
+//     // Méthodes
+//     constructor(Name: string, Position: string, Salary:number) {
+//         this.name = Name;
+//         this.position = Position;
+//          this.salary = Salary;
+//     }
+
+
+//     introduce(){
+//          console.log("Informations", this.name, "métier et position dans l'entreprise ",this.position,"salaire en euros par mois brut",this.salary);
+
+//     }
+// }
+// // Instanciation d'une classe via l'opérateur new
+// // const person = new Person("Duplouich","Marie-Sophie");
+// // person.sayHello();   // Appel d'une méthode de la classe Person
+
+// const employeecdbp = new Employee("Combey","Chirurgien-orthodontiste conventionné secteur 2",12854);
+
+// employeecdbp.introduce();
+
 
 
 // Exercice 10
 // Crée une classe Plane avec model et capacity.
 // Ajoute une méthode fly() qui affiche un message.
+
+class Plane {
+    // Attributs
+    model: string;
+    capacity: number;
+
+
+
+
+    // Méthodes
+    constructor(Model: string, Capacity: number) {
+        this.model = Model;
+        this.capacity = Capacity;
+
+    }
+
+
+    fly() {
+        console.log("Informations", this.model, "peut comporter un nombre maximal de passagers de : ", this.capacity);
+
+    }
+}
+// Instanciation d'une classe via l'opérateur new
+// const person = new Person("Duplouich","Marie-Sophie");
+// person.sayHello();   // Appel d'une méthode de la classe Person
+
+const airbus = new Plane("Airbus A-390", 1000);
+
+airbus.fly();
