@@ -1300,31 +1300,107 @@
 // Crée une classe Plane avec model et capacity.
 // Ajoute une méthode fly() qui affiche un message.
 
-class Plane {
-    // Attributs
-    model: string;
-    capacity: number;
+// class Plane {
+//     // Attributs
+//     model: string;
+//     capacity: number;
 
 
 
 
-    // Méthodes
-    constructor(Model: string, Capacity: number) {
-        this.model = Model;
-        this.capacity = Capacity;
+//     // Méthodes
+//     constructor(Model: string, Capacity: number) {
+//         this.model = Model;
+//         this.capacity = Capacity;
 
-    }
+//     }
 
 
-    fly() {
-        console.log("Informations", this.model, "peut comporter un nombre maximal de passagers de : ", this.capacity);
+//     fly() {
+//         console.log("Informations", this.model, "peut comporter un nombre maximal de passagers de : ", this.capacity);
 
-    }
-}
-// Instanciation d'une classe via l'opérateur new
-// const person = new Person("Duplouich","Marie-Sophie");
-// person.sayHello();   // Appel d'une méthode de la classe Person
+//     }
+// }
+// // Instanciation d'une classe via l'opérateur new
+// // const person = new Person("Duplouich","Marie-Sophie");
+// // person.sayHello();   // Appel d'une méthode de la classe Person
 
-const airbus = new Plane("Airbus A-390", 1000);
+// const airbus = new Plane("Airbus A-390", 1000);
 
-airbus.fly();
+// airbus.fly();
+
+
+// Chapitre 3 – Public et Private
+
+// Exercice 1
+// Crée une classe BankAccount avec une propriété privée balance.
+// Ajoute une méthode publique showBalance().
+
+
+
+
+
+// Exercice 2
+// Crée une classe SafeBox avec une propriété privée secretCode.
+// Ajoute une méthode publique open(code: string) qui vérifie si le code est correct.
+
+
+
+
+
+// Exercice 3
+// Crée une classe Email avec une propriété privée content.
+// Ajoute une méthode publique read() pour l’afficher.
+
+
+
+
+// Exercice 4
+// Crée une classe Thermostat avec une température privée.
+// Ajoute une méthode publique showTemperature().
+
+
+
+
+// Exercice 5
+// Crée une classe Door avec un état privé isLocked.
+// Ajoute une méthode unlock() et une méthode lock().
+
+
+
+
+
+// Exercice 6
+// Crée une classe Score avec une propriété privée points.
+// Ajoute une méthode addPoints(value: number) et showScore().
+
+
+
+
+
+// Exercice 7
+// Crée une classe Light avec une propriété privée isOn.
+// Ajoute des méthodes turnOn() et turnOff().
+
+
+
+
+
+// Exercice 8
+// Crée une classe Car avec une vitesse privée.
+// Ajoute une méthode showSpeed().
+
+
+
+
+// Exercice 9
+// Crée une classe Password avec une propriété privée value.
+// Ajoute une méthode check(password: string) pour vérifier la correspondance.
+
+
+
+
+
+// Exercice 10
+// Crée une classe Wallet avec une somme privée money.
+// Ajoute des méthodes addMoney() et showMoney()
