@@ -1525,21 +1525,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // Exercice 10
 // Crée une classe Wallet avec une somme privée money.
 // Ajoute des méthodes addMoney() et showMoney()
@@ -1569,3 +1554,49 @@
 // const account = new  Wallet(30000);
 // account.showMoney();
 // account.addMoney();
+
+
+// Chapitre 4 – Constructor, Public, Private, Setter & Getter (sans syntaxe get / set)
+// Exercice 1
+// Crée une classe User avec un username public et un password privé.
+// Ajoute une méthode checkPassword(pass: string) qui retourne vrai si le mot de passe est correct.
+
+// Exercice 2
+// Crée une classe Car avec brand privé et speed privé.
+// Ajoute setSpeed(newSpeed: number) et getSpeed().
+
+// Exercice 3
+// Crée une classe Student avec name public et average privé.
+// Ajoute des méthodes setAverage(value: number) et getAverage().
+
+// Exercice 4
+// Crée une classe Account avec un solde privé.
+// Ajoute une méthode deposit(amount: number) et getBalance().
+
+// Exercice 5
+// Crée une classe Book avec un title public et un price privé.
+// Ajoute setPrice(newPrice: number) et getPrice().
+
+// Exercice 6
+// Crée une classe Laptop avec brand et batteryLevel privés.
+// Ajoute des méthodes pour augmenter ou diminuer le niveau de batterie.
+
+// Exercice 7
+// Crée une classe Person avec name et age privés.
+// Ajoute des méthodes setAge(newAge: number) et getAge().
+
+// Exercice 8
+// Crée une classe Phone avec number privé et owner public.
+// Ajoute des méthodes pour modifier le numéro et le lire.
+
+// Exercice 9
+// Crée une classe GameCharacter avec name public et health privé.
+// Ajoute des méthodes pour infliger des dégâts (takeDamage) et afficher la santé (getHealth).
+
+// Exercice 10
+// Crée une classe BankAccount avec un owner public et un balance privé.
+// Ajoute deposit(amount: number), withdraw(amount: number), et getBalance().
+
+// 📘 Conseil final : Teste tous tes exercices dans un fichier .ts, puis exécute-les avec la commande :
+
+// tsc nom_du_fichier.ts && node nom_du_fichier.js
