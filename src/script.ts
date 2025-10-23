@@ -1457,6 +1457,25 @@
 // Ajoute une méthode unlock() et une méthode lock().
 
 
+// class Door {
+//     private isLocked: string;
+
+
+//     constructor(temperature: number) {
+//         this.temperature = temperature;
+//     }
+//     /**
+//      * La méthode accelerer doit être publique pour que la voiture se
+//      * déplace lors de l'appui d'une touche du clavier. 
+//      */
+//     public unlock() {
+
+//         console.log("Il fait,aujoud'hui", this.temperature, "°.");
+//     }
+// }
+// // Instanciation
+// const weather = new Thermostat(30);
+// weather.showTemperature();
 
 
 
@@ -1482,12 +1501,43 @@
 
 
 
+class Car {
+    // Attributs
+       private vitesse : number;
+    // Méthodes
+    constructor(vitesse : number) {
+      this.vitesse = vitesse;           // On initialise la vitesse à 0 km/h
+    }
 
-// Exercice 9
-// Crée une classe Password avec une propriété privée value.
-// Ajoute une méthode check(password: string) pour vérifier la correspondance.
+    showSpeed() {
+        console.log("Voiture : ",this.vitesse,"km/h");
+    }
+}
+// Instanciation d'une classe via l'opérateur new
+const car = new Car(300);
+// car.showInfo();   // Appel d'une méthode de la classe Person
+car.showSpeed();
 
 
+// class Thermostat {
+//     private temperature: number;
+
+
+//     constructor(temperature: number) {
+//         this.temperature = temperature;
+//     }
+//     /**
+//      * La méthode accelerer doit être publique pour que la voiture se
+//      * déplace lors de l'appui d'une touche du clavier. 
+//      */
+//     public showTemperature() {
+
+//         console.log("Il fait,aujoud'hui", this.temperature, "°.");
+//     }
+// }
+// // Instanciation
+// const weather = new Thermostat(30);
+// weather.showTemperature();
 
 
 

@@ -1090,6 +1090,22 @@
 // Exercice 5
 // Crée une classe Door avec un état privé isLocked.
 // Ajoute une méthode unlock() et une méthode lock().
+// class Door {
+//     private isLocked: string;
+//     constructor(temperature: number) {
+//         this.temperature = temperature;
+//     }
+//     /**
+//      * La méthode accelerer doit être publique pour que la voiture se
+//      * déplace lors de l'appui d'une touche du clavier. 
+//      */
+//     public unlock() {
+//         console.log("Il fait,aujoud'hui", this.temperature, "°.");
+//     }
+// }
+// // Instanciation
+// const weather = new Thermostat(30);
+// weather.showTemperature();
 // Exercice 6
 // Crée une classe Score avec une propriété privée points.
 // Ajoute une méthode addPoints(value: number) et showScore().
@@ -1099,9 +1115,35 @@
 // Exercice 8
 // Crée une classe Car avec une vitesse privée.
 // Ajoute une méthode showSpeed().
-// Exercice 9
-// Crée une classe Password avec une propriété privée value.
-// Ajoute une méthode check(password: string) pour vérifier la correspondance.
+class Car {
+    // Méthodes
+    constructor(vitesse) {
+        this.vitesse = vitesse; // On initialise la vitesse à 0 km/h
+    }
+    showSpeed() {
+        console.log("Voiture : ", this.vitesse, "km/h");
+    }
+}
+// Instanciation d'une classe via l'opérateur new
+const car = new Car(300);
+// car.showInfo();   // Appel d'une méthode de la classe Person
+car.showSpeed();
+// class Thermostat {
+//     private temperature: number;
+//     constructor(temperature: number) {
+//         this.temperature = temperature;
+//     }
+//     /**
+//      * La méthode accelerer doit être publique pour que la voiture se
+//      * déplace lors de l'appui d'une touche du clavier. 
+//      */
+//     public showTemperature() {
+//         console.log("Il fait,aujoud'hui", this.temperature, "°.");
+//     }
+// }
+// // Instanciation
+// const weather = new Thermostat(30);
+// weather.showTemperature();
 // Exercice 10
 // Crée une classe Wallet avec une somme privée money.
 // Ajoute des méthodes addMoney() et showMoney()
