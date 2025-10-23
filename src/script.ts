@@ -1501,46 +1501,71 @@
 
 
 
-class Car {
-    // Attributs
-       private vitesse : number;
-    // Méthodes
-    constructor(vitesse : number) {
-      this.vitesse = vitesse;           // On initialise la vitesse à 0 km/h
-    }
-
-    showSpeed() {
-        console.log("Voiture : ",this.vitesse,"km/h");
-    }
-}
-// Instanciation d'une classe via l'opérateur new
-const car = new Car(300);
-// car.showInfo();   // Appel d'une méthode de la classe Person
-car.showSpeed();
-
-
-// class Thermostat {
-//     private temperature: number;
-
-
-//     constructor(temperature: number) {
-//         this.temperature = temperature;
+// class Car {
+//     // Attributs
+//        private vitesse : number;
+//     // Méthodes
+//     constructor(vitesse : number) {
+//       this.vitesse = vitesse;           // On initialise la vitesse à 0 km/h
 //     }
-//     /**
-//      * La méthode accelerer doit être publique pour que la voiture se
-//      * déplace lors de l'appui d'une touche du clavier. 
-//      */
-//     public showTemperature() {
 
-//         console.log("Il fait,aujoud'hui", this.temperature, "°.");
+//     showSpeed() {
+//         console.log("Voiture : ",this.vitesse,"km/h");
 //     }
 // }
-// // Instanciation
-// const weather = new Thermostat(30);
-// weather.showTemperature();
+// // Instanciation d'une classe via l'opérateur new
+// const car = new Car(300);
+// // car.showInfo();   // Appel d'une méthode de la classe Person
+// car.showSpeed();
+
+
+// Exercice 9
+// Crée une classe Password avec une propriété privée value.
+// Ajoute une méthode check(password: string) pour vérifier la correspondance.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 // Exercice 10
 // Crée une classe Wallet avec une somme privée money.
 // Ajoute des méthodes addMoney() et showMoney()
+
+
+// class Wallet{
+//     private money : number;
+
+
+//     constructor(money : number){
+//         this.money = money;       
+//     }
+//     /**
+//      * La méthode accelerer doit être publique pour que la voiture se
+//      * déplace lors de l'appui d'une touche du clavier. 
+//      */
+//     public showMoney(){
+
+//     console.log (this.money);
+//     }
+//       public addMoney(){
+
+//     console.log (this.money + 300);
+//     }
+// }  
+// // Instanciation
+// const account = new  Wallet(30000);
+// account.showMoney();
+// account.addMoney();
