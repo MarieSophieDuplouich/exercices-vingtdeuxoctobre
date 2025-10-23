@@ -791,7 +791,7 @@
 // ordi.getInfo();
 // Chapitre 2 – Constructor
 // Exercice 1
-// Reprends la classe Person et ajoute un constructeur qui initialise firstName et lastName.
+//Reprends la classe Person et ajoute un constructeur qui initialise firstName et lastName.
 // class Person {
 //     // Attributs
 //     name: string;
@@ -1003,15 +1003,90 @@
 // Exercice 1
 // Crée une classe BankAccount avec une propriété privée balance.
 // Ajoute une méthode publique showBalance().
+// class BankAccount{
+//     private balance : number;
+//     constructor(balance : number){
+//         this.balance = balance;       
+//     }
+//     /**
+//      * La méthode accelerer doit être publique pour que la voiture se
+//      * déplace lors de l'appui d'une touche du clavier. 
+//      */
+//     public showBalance(){
+//     console.log (this.balance);
+//     }
+// }  
+// // Instanciation
+// const account = new BankAccount(3000);
+// account.showBalance();
 // Exercice 2
 // Crée une classe SafeBox avec une propriété privée secretCode.
 // Ajoute une méthode publique open(code: string) qui vérifie si le code est correct.
+// let code = prompt("Put your password,please."); //méthode meiko
+// class SafeBox {
+//     private secretCode: string;
+//     constructor(code: string) {
+//         this.secretCode = code;
+//     }
+//     /**
+//      * La méthode accelerer doit être publique pour que la voiture se
+//      * déplace lors de l'appui d'une touche du clavier. 
+//      */
+//     public open(code: string) {
+//         if (this.secretCode === code) {
+//             // La voiture accélère.
+//             console.log("Bienvenue MS");
+//             // return true; méthode bérangère
+//         }
+//         else {
+//             console.log("Try again !")
+//             // return false;  méthode bérangère
+//         }
+//     }
+// }
+// // // Instanciation
+// const codes = new SafeBox("Barakah_3000");
+// codes.open(code);
+// codes.open("fuax"); // mauvais mot de passe  méthode bérangère
+// codes.open("Barakah_3000");// bon mot de passe méthodes meiko et bérangère
 // Exercice 3
 // Crée une classe Email avec une propriété privée content.
 // Ajoute une méthode publique read() pour l’afficher.
+// class Email{
+//     private content : string;
+//     constructor(content : string){
+//         this.content = content;       
+//     }
+//     /**
+//      * La méthode accelerer doit être publique pour que la voiture se
+//      * déplace lors de l'appui d'une touche du clavier. 
+//      */
+//     public read(){
+//     console.log (this.content);
+//     }
+// }  
+// // Instanciation
+// const emailme = new Email("Coucou, c'est moi signé moi");
+// emailme.read();
 // Exercice 4
 // Crée une classe Thermostat avec une température privée.
 // Ajoute une méthode publique showTemperature().
+// class Thermostat {
+//     private temperature: number;
+//     constructor(temperature: number) {
+//         this.temperature = temperature;
+//     }
+//     /**
+//      * La méthode accelerer doit être publique pour que la voiture se
+//      * déplace lors de l'appui d'une touche du clavier. 
+//      */
+//     public showTemperature() {
+//         console.log("Il fait,aujoud'hui", this.temperature, "°.");
+//     }
+// }
+// // Instanciation
+// const weather = new Thermostat(30);
+// weather.showTemperature();
 // Exercice 5
 // Crée une classe Door avec un état privé isLocked.
 // Ajoute une méthode unlock() et une méthode lock().
