@@ -1640,44 +1640,44 @@
 // Crée une classe Car avec brand privé et speed privé.
 // Ajoute setSpeed(newSpeed: number) et getSpeed().
 
-class Car {
-    // Attributs
-    private brand: string;
-    private speed: number;
-    // Méthodes
-    constructor(brand: string, newSpeed: number) {
+// class Car {
+//     // Attributs
+//     private brand: string;
+//     private speed: number;
+//     // Méthodes
+//     constructor(brand: string, newSpeed: number) {
 
-        this.brand = brand;
-        this.speed = newSpeed;
-    }
-
-
-    public getSpeed(): number {
-        return this.speed;
-    }
-    public setSpeed(newSpeed: number): void {
-        this.speed = newSpeed;
-        console.log("Voiture : ", this.speed, "km/h");
-        if (newSpeed < 0) throw "speed value wrong"
-        else { console.log("tout va bien") };
-    }
+//         this.brand = brand;
+//         this.speed = newSpeed;
+//     }
 
 
-    public getBrand(): string {
-        return this.brand;
-    }
-    public setBrand(brand: string): void {
-        this.brand = brand;
-        console.log("Marque de voiture : ", this.brand, ".");
-    }
+//     public getSpeed(): number {
+//         return this.speed;
+//     }
+//     public setSpeed(newSpeed: number): void {
+//         this.speed = newSpeed;
+//         console.log("Voiture : ", this.speed, "km/h");
+//         if (newSpeed < 0) throw "speed value wrong"
+//         else { console.log("tout va bien") };
+//     }
 
 
-}
-// Instanciation d'une classe via l'opérateur new
-const car = new Car("Audi", 300);
-// car.showInfo();   // Appel d'une méthode de la classe Person
-car.setBrand("BMW");
-car.setSpeed(250);
+//     public getBrand(): string {
+//         return this.brand;
+//     }
+//     public setBrand(brand: string): void {
+//         this.brand = brand;
+//         console.log("Marque de voiture : ", this.brand, ".");
+//     }
+
+
+// }
+// // Instanciation d'une classe via l'opérateur new
+// const car = new Car("Audi", 300);
+// // car.showInfo();   // Appel d'une méthode de la classe Person
+// car.setBrand("BMW");
+// car.setSpeed(250);
 
 
 
@@ -1687,44 +1687,44 @@ car.setSpeed(250);
 
 
 
-class Student {
-    // Attributs
-    public name: string;
-    private value: number;
+// class Student {
+//     // Attributs
+//     public name: string;
+//     private value: number;
 
-    // Méthodes
-    constructor(name: string, value: number) {
+//     // Méthodes
+//     constructor(name: string, value: number) {
 
-        this.name = name;
-        this.value = value;
-    }
-
-
-    public getAverage(): number {
-        return this.value;
-    }
-    public setAverage(value: number): void {
-       this.value = value =  (12 + 14 + 20) / 3;
-       
-        console.log("l'étudiant a  ", this.value, "de moyenne.");
-    }
+//         this.name = name;
+//         this.value = value;
+//     }
 
 
-    public getName(): string {
-        return this.name;
-    }
-    public setName(name: string): void {
-        this.name = name;
-        console.log("Nom de l'étudiant : ", this.name, ".");
-    }
+//     public getAverage(): number {
+//         return this.value;
+//     }
+//     public setAverage(value: number): void {
+//        this.value = value =  (12 + 14 + 20) / 3;
+
+//         console.log("l'étudiant a  ", this.value, "de moyenne.");
+//     }
 
 
-}
-// Instanciation d'une classe via l'opérateur new
-const student = new Student("Nicolas", 3);
-// car.showInfo();   // Appel d'une méthode de la classe Person
-student.setAverage();
-student.setName("Nicolas");
+//     public getName(): string {
+//         return this.name;
+//     }
+//     public setName(name: string): void {
+//         this.name = name;
+//         console.log("Nom de l'étudiant : ", this.name, ".");
+//     }
+
+
+// }
+// // Instanciation d'une classe via l'opérateur new
+// const student = new Student("Nicolas", 3);
+// // car.showInfo();   // Appel d'une méthode de la classe Person
+// student.setAverage();
+// student.setName("Nicolas");
 
 // Exercice 4
 // Crée une classe Account avec un solde privé.
@@ -1751,14 +1751,79 @@ student.setName("Nicolas");
 // Ajoute des méthodes pour infliger des dégâts (takeDamage) et afficher la santé (getHealth).
 
 
+class GameCharacter {
+    private health: number;
+    public name: string;
+    protected damage: number;
+
+    constructor(name: string, health: number, damage: number) {
+        this.name = name;
+        this.health = health;
+        this.damage = damage;
+    }
+
+
+    public getHealth(): number {
+        return this.health;
+    }
+
+       public setHealth(health: number): void {
+        this.health = health;
+    }
+
+    public takeDamage(damage: number): void {
+        this.health -= damage;
+        if (this.health <= 0) {
+            //  ici si le player prends un dommage il perd une vie là j'ai mal fait 
+            this.health = 0;
+            console.log("Il est mort !");
+        }
+    }
+}
+class Player extends GameCharacter {
+ constructor(name: string, health: number) {
+        // Par défaut un joueur fait 1 point de dégât
+        super(name, health, 1);
+    }
+
+    public setName(name: string): void {
+        if (name.length > 3)
+            this.name = name;
+    }
+
+    public getName(): string {
+        return this.name;
+    }
 
 
 
+}
+class Monster extends GameCharacter {
+    private zoneAgro: number;
+    
+    constructor(name: string, health: number) {
+        // Par défaut un monstre fait aussi 1 point de dégât
+        super(name, health, 1);
+    }
+    public setZoneAgro(rayon: number) {
+        if (rayon > 0) {
+            this.zoneAgro = rayon;
+        }
+    }
+}
+const joueur = new Player("Xx_bastien_83",3);     // Le joueur a 3 pv
 
+const goblin = new Monster("Goblin",1);  // Le goblin n'a qu'un pv.
+goblin.setZoneAgro(3);      // Zone d'agro de 3 mètres.
 
+//quoi mettre ici ci-dessous
+console.log(goblin.getHealth());
+goblin.takeDamage(1);
+console.log(goblin.getHealth());
 
-
-
+console.log(joueur.getHealth());
+joueur.takeDamage(2);
+console.log(joueur.getHealth());
 
 // Exercice 10
 // Crée une classe BankAccount avec un owner public et un balance privé.
