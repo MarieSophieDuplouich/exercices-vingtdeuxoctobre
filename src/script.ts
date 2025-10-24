@@ -1557,13 +1557,101 @@
 
 
 // Chapitre 4 – Constructor, Public, Private, Setter & Getter (sans syntaxe get / set)
+
+
+// Getter et Setter
+// Les attributs se doivent d'être privés, mais il faut parfois tout de même pouvoir y accéder. 
+// Pour cela, on crée des méthodes publiques appelées Getter et Setter. Les Getter renvoient 
+// la valeur de l'attribut demandé alors que le Setter modifie la valeur 
+// de l'attribut en s'assurant que la valeur fournie est correcte.
+
+
+// La présence de getter et setter rallonge le nombre de lignes de code mais permet une encapsulation correcte et améliore la robustesse du code. La programmation orientée objet ne cherche pas à réduire le nombre de lignes mais à diminuer le temps de développement via des classes réutilisables et robustes. En programmation, plus de lignes ne veut pas forcément dire plus long à développer.
+
+
 // Exercice 1
 // Crée une classe User avec un username public et un password privé.
 // Ajoute une méthode checkPassword(pass: string) qui retourne vrai si le mot de passe est correct.
 
+let username :string = prompt("Entrez votre username")??""; 
+
+// ?? prompt marche ou ça renvoie rien c'est un ou
+let pass :string = prompt("Entrez votre mot de passe")??""; 
+
+
+class User{
+    public username : string;
+    private pass : string;
+
+    constructor(username : string, pass : string)
+    {
+        this.username = username;
+        this.pass= pass;
+    }
+
+   
+
+    public checkPassword(pass: string) {
+        if (this.pass === pass) {
+        
+
+            console.log("Bienvenue MS");
+            // return true; méthode bérangère
+        }
+        else {
+            console.log("ce n'est pas bon réessaie  !")
+            // return false;  méthode bérangère
+        }
+    }
+
+    public getUsername() : string
+    {
+        return this.username;
+    }
+    public setUsername(username : string) : void
+    {
+        if(this.username === username){
+            this.username = username;
+              console.log("C'est ton bon username MS");
+        }
+        else{
+            console.log("ce n'est pas le bon username")
+        }
+    }
+
+
+    public checkUsername(username: string) {
+        if (this.username === username) {
+        
+
+            console.log("Bienvenue MS");
+            // return true; méthode bérangère
+        }
+        else {
+            console.log("ce n'est pas bon réessaie  !")
+            // return false;  méthode bérangère
+        }
+    }
+}
+
+const user = new User("Nicolaslepigeondalmatien","Babasalé_3000!");
+
+user.checkPassword(pass);
+
+user.checkUsername(username);
+
+
+
+
+
+
 // Exercice 2
 // Crée une classe Car avec brand privé et speed privé.
 // Ajoute setSpeed(newSpeed: number) et getSpeed().
+
+
+
+
 
 // Exercice 3
 // Crée une classe Student avec name public et average privé.
