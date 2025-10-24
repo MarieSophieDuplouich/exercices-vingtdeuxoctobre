@@ -1573,75 +1573,66 @@
 // Crée une classe User avec un username public et un password privé.
 // Ajoute une méthode checkPassword(pass: string) qui retourne vrai si le mot de passe est correct.
 
-let username :string = prompt("Entrez votre username")??""; 
+// let username :string = prompt("Entrez votre username")??""; 
 
-// ?? prompt marche ou ça renvoie rien c'est un ou
-let pass :string = prompt("Entrez votre mot de passe")??""; 
+// // ?? prompt marche ou ça renvoie rien c'est un ou
+// let pass :string = prompt("Entrez votre mot de passe")??""; 
 
 
-class User{
-    public username : string;
-    private pass : string;
+// class User{
+//     public username : string;
+//     private pass : string;
 
-    constructor(username : string, pass : string)
-    {
-        this.username = username;
-        this.pass= pass;
-    }
+//     constructor(username : string, pass : string)
+//     {
+//         this.username = username;
+//         this.pass= pass;
+//     }
 
    
 
-    public checkPassword(pass: string) {
-        if (this.pass === pass) {
+//     public checkPassword(pass: string) {
+//         if (this.pass === pass) {
         
 
-            console.log("Bienvenue MS");
-            // return true; méthode bérangère
-        }
-        else {
-            console.log("ce n'est pas bon réessaie  !")
-            // return false;  méthode bérangère
-        }
-    }
+//             console.log("Bienvenue MS");
+//             // return true; méthode bérangère
+//         }
+//         else {
+//             console.log("ce n'est pas bon réessaie  !")
+//             // return false;  méthode bérangère
+//         }
+//     }
 
-    public getUsername() : string
-    {
-        return this.username;
-    }
-    public setUsername(username : string) : void
-    {
-        if(this.username === username){
-            this.username = username;
-              console.log("C'est ton bon username MS");
-        }
-        else{
-            console.log("ce n'est pas le bon username")
-        }
-    }
+//     public getUsername() : string
+//     {
+//         return this.username;
+//     }
+//     public setUsername(username : string) : void
+//     {
+//             this.username = username;
+//     }
 
 
-    public checkUsername(username: string) {
-        if (this.username === username) {
+//     public checkUsername(username: string) {
+//         if (this.username === username) {
         
 
-            console.log("Bienvenue MS");
-            // return true; méthode bérangère
-        }
-        else {
-            console.log("ce n'est pas bon réessaie  !")
-            // return false;  méthode bérangère
-        }
-    }
-}
+//             console.log("Bienvenue MS");
+//             return true; //méthode bérangère
+//         }
+//         else {
+//             console.log("ce n'est pas bon réessaie  !")
+//             return false;  //méthode bérangère
+//         }
+//     }
+// }
 
-const user = new User("Nicolaslepigeondalmatien","Babasalé_3000!");
+// const user = new User("Nicolaslepigeondalmatien","Babasalé_3000!");
 
-user.checkPassword(pass);
+// user.checkPassword(pass);
 
-user.checkUsername(username);
-
-
-
+// user.checkUsername(username);
 
 
 
@@ -1649,8 +1640,45 @@ user.checkUsername(username);
 // Crée une classe Car avec brand privé et speed privé.
 // Ajoute setSpeed(newSpeed: number) et getSpeed().
 
+class Car {
+    // Attributs
+       private brand : string;
+       private speed : number;
+    // Méthodes
+    constructor( brand : string, newSpeed: number) {
+      this.speed = newSpeed;  
+      this.brand = brand;         
+    }
 
+  
+      public getSpeed() : number
+    {
+        return this.speed;
+    }
+    public setSpeed(newSpeed: number) : void
+    {
+            this.speed  = newSpeed;
+            console.log("Voiture : ",this.speed,"km/h");
+    }
+    
+      
+      public getBrand() : string
+    {
+        return this.brand;
+    }
+    public setBrand(brand : string) : void
+    {
+            this.brand  = brand;
+            console.log("Marque de voiture : ",this.brand,".");
+    }
 
+  
+}
+// Instanciation d'une classe via l'opérateur new
+const car = new Car("Audi", 300);
+// car.showInfo();   // Appel d'une méthode de la classe Person
+car.setSpeed(250);
+car.setBrand("BMW");
 
 
 // Exercice 3
