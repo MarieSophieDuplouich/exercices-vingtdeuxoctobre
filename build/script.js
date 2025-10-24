@@ -1247,6 +1247,32 @@ car.setSpeed(250);
 // Exercice 3
 // Crée une classe Student avec name public et average privé.
 // Ajoute des méthodes setAverage(value: number) et getAverage().
+class Student {
+    // Méthodes
+    constructor(name, value) {
+        this.name = name;
+        this.value = value;
+    }
+    getAverage() {
+        return this.value;
+    }
+    setAverage(value) {
+        this.value = value = (12 + 14 + 20) / 3;
+        console.log("l'étudiant a  ", this.value, "de moyenne.");
+    }
+    getName() {
+        return this.name;
+    }
+    setName(name) {
+        this.name = name;
+        console.log("Nom de l'étudiant : ", this.name, ".");
+    }
+}
+// Instanciation d'une classe via l'opérateur new
+const student = new Student("Nicolas", 3);
+// car.showInfo();   // Appel d'une méthode de la classe Person
+student.setAverage();
+student.setName("Nicolas");
 // Exercice 4
 // Crée une classe Account avec un solde privé.
 // Ajoute une méthode deposit(amount: number) et getBalance().

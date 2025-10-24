@@ -1589,11 +1589,11 @@
 //         this.pass= pass;
 //     }
 
-   
+
 
 //     public checkPassword(pass: string) {
 //         if (this.pass === pass) {
-        
+
 
 //             console.log("Bienvenue MS");
 //             // return true; méthode bérangère
@@ -1616,7 +1616,7 @@
 
 //     public checkUsername(username: string) {
 //         if (this.username === username) {
-        
+
 
 //             console.log("Bienvenue MS");
 //             return true; //méthode bérangère
@@ -1642,40 +1642,36 @@
 
 class Car {
     // Attributs
-       private brand : string;
-       private speed : number;
+    private brand: string;
+    private speed: number;
     // Méthodes
-    constructor( brand : string, newSpeed: number) {
-     
-      this.brand = brand; 
-       this.speed = newSpeed;          
+    constructor(brand: string, newSpeed: number) {
+
+        this.brand = brand;
+        this.speed = newSpeed;
     }
 
-  
-      public getSpeed() : number
-    {
+
+    public getSpeed(): number {
         return this.speed;
     }
-    public setSpeed(newSpeed: number) : void
-    {
-            this.speed  = newSpeed;
-            console.log("Voiture : ",this.speed,"km/h");
-            if(newSpeed < 0) throw "speed value wrong"
-            else {console.log("tout va bien")};
-    }
-    
-      
-      public getBrand() : string
-    {
-        return this.brand;
-    }
-    public setBrand(brand : string) : void
-    {
-            this.brand  = brand;
-            console.log("Marque de voiture : ",this.brand,".");
+    public setSpeed(newSpeed: number): void {
+        this.speed = newSpeed;
+        console.log("Voiture : ", this.speed, "km/h");
+        if (newSpeed < 0) throw "speed value wrong"
+        else { console.log("tout va bien") };
     }
 
-  
+
+    public getBrand(): string {
+        return this.brand;
+    }
+    public setBrand(brand: string): void {
+        this.brand = brand;
+        console.log("Marque de voiture : ", this.brand, ".");
+    }
+
+
 }
 // Instanciation d'une classe via l'opérateur new
 const car = new Car("Audi", 300);
@@ -1691,6 +1687,44 @@ car.setSpeed(250);
 
 
 
+class Student {
+    // Attributs
+    public name: string;
+    private value: number;
+
+    // Méthodes
+    constructor(name: string, value: number) {
+
+        this.name = name;
+        this.value = value;
+    }
+
+
+    public getAverage(): number {
+        return this.value;
+    }
+    public setAverage(value: number): void {
+       this.value = value =  (12 + 14 + 20) / 3;
+       
+        console.log("l'étudiant a  ", this.value, "de moyenne.");
+    }
+
+
+    public getName(): string {
+        return this.name;
+    }
+    public setName(name: string): void {
+        this.name = name;
+        console.log("Nom de l'étudiant : ", this.name, ".");
+    }
+
+
+}
+// Instanciation d'une classe via l'opérateur new
+const student = new Student("Nicolas", 3);
+// car.showInfo();   // Appel d'une méthode de la classe Person
+student.setAverage();
+student.setName("Nicolas");
 
 // Exercice 4
 // Crée une classe Account avec un solde privé.
@@ -1715,6 +1749,16 @@ car.setSpeed(250);
 // Exercice 9
 // Crée une classe GameCharacter avec name public et health privé.
 // Ajoute des méthodes pour infliger des dégâts (takeDamage) et afficher la santé (getHealth).
+
+
+
+
+
+
+
+
+
+
 
 // Exercice 10
 // Crée une classe BankAccount avec un owner public et un balance privé.
