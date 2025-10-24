@@ -1817,13 +1817,20 @@ const goblin = new Monster("Goblin",1);  // Le goblin n'a qu'un pv.
 goblin.setZoneAgro(3);      // Zone d'agro de 3 mètres.
 
 //quoi mettre ici ci-dessous
+// il manque plus que le name qui s'affiche
 console.log(goblin.getHealth());
 goblin.takeDamage(1);
 console.log(goblin.getHealth());
+console.log(goblin.getName());
 
+// il manque plus que le name qui s'affiche
 console.log(joueur.getHealth());
 joueur.takeDamage(2);
 console.log(joueur.getHealth());
+console.log(joueur.getName());
+
+
+
 
 // Exercice 10
 // Crée une classe BankAccount avec un owner public et un balance privé.
