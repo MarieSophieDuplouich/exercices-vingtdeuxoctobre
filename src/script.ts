@@ -1646,8 +1646,9 @@ class Car {
        private speed : number;
     // Méthodes
     constructor( brand : string, newSpeed: number) {
-      this.speed = newSpeed;  
-      this.brand = brand;         
+     
+      this.brand = brand; 
+       this.speed = newSpeed;          
     }
 
   
@@ -1659,6 +1660,8 @@ class Car {
     {
             this.speed  = newSpeed;
             console.log("Voiture : ",this.speed,"km/h");
+            if(newSpeed < 0) throw "speed value wrong"
+            else {console.log("tout va bien")};
     }
     
       
@@ -1677,13 +1680,17 @@ class Car {
 // Instanciation d'une classe via l'opérateur new
 const car = new Car("Audi", 300);
 // car.showInfo();   // Appel d'une méthode de la classe Person
-car.setSpeed(250);
 car.setBrand("BMW");
+car.setSpeed(250);
+
 
 
 // Exercice 3
 // Crée une classe Student avec name public et average privé.
 // Ajoute des méthodes setAverage(value: number) et getAverage().
+
+
+
 
 // Exercice 4
 // Crée une classe Account avec un solde privé.
